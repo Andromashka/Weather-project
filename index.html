@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SheCodes+.Week5</title>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
+    <link rel="stylesheet" href="src/styles.css"/>
+  </head>
+  <body>
+     <div class="container">
+    <h1 id="city"></h1>
+
+      <h2 id="date"></h2>
+    <br/>
+    <div class="weather-app">
+        <form class="search-form" id="search-form">
+          <div class="row">
+            <div class="col-6">
+              <input
+                type="search"
+                placeholder="Type a city.."
+                autofocus="on"
+                autocomplete="off"
+                id="city-input"
+                class="form-control shadow-sm"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                type="submit"
+                value="Search"
+                class="form-control btn btn-primary shadow-sm w-100"
+              />
+            </div>
+            <div class="col-3">
+              <button
+                class="btn-2 btn-success w-100"
+                id="current-location-button"
+              >
+                Current
+              </button>
+            </div>
+          </div>
+    </form>
+      <div class="today">
+      <img src="images/123.png" width="100"/>
+      <p id="current-weather">
+    <br/>
+      <span id="current-temp">26</span>
+      <br/>
+      <a href="#" id="celcius-link">°C /</a>
+      <a href="#" id="fahrenheit-link">°F</a>
+    </p>
+    </div> 
+  <div class="row">
+      <div class="col-2">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Mon</h5>
+            <img src="images/monday.png" width="50"/>
+          </br>
+            <h5 class="card-title">18°/11°</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Tue</h5>
+           <img src="images/tuesday.png" width="50"/>
+          </br>
+          <h5 class="card-title">16°/9°</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Wed</h5>
+             <img src="images/sunny.png" width="50"/>
+            </br>
+             <h5 class="card-title">22°/14°</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Thu</h5>
+               <img src="images/cloudy.png" width="50"/>
+              </br>
+              <h5 class="card-title">20°/16°</h5>
+              </div>
+            </div>
+          </div> <div class="col-2">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Fri</h5>
+                  <img src="images/123.png" width="50"/>
+                </br>
+                <h5 class="card-title">21°/17°</h5>
+                </div>
+              </div>
+            </div>
+    </div>
+</div>
+<script src="src/script.js"></script>
+  </body>
+</html>
